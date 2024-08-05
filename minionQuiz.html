@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- <link rel="stylesheet" href="styles/quiz.css" /> -->
+    <title>Minions!</title>
+  </head>
+  <style>
+    .minionQuiz {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: 50px;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+    }
+    input[type="submit"] {
+      border-color: #8a2be2;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    select {
+      padding: 16px 20px;
+      border: none;
+      border-radius: 4px;
+      /* background-color: #f1f1f1; */
+    }
+    /* label{
+      padding-top:20px;
+    } */
+  </style>
+  <body>
+    <h1>Are you cut out to be a minion</h1>
+
+    <div class="minionQuiz">
+      <label> What month and year were you born? </label>
+      <input id="bday-month" type="month" name="bday-month" />
+
+      <br />
+
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" />
+      <br />
+
+      <label for="userName"
+        >User Name
+        <input type="text" name="userName" id="UserName" required />
+      </label>
+      <br />
+
+      <label>Choose their favorite fruit:</label>
+      <select name="fav-fruit">
+        <option value="None" selected>None</option>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="strawberry">Strawberry</option>
+      </select>
+
+      <br />
+      <input type="submit" />
+    </div>
+  </body>
+</html>

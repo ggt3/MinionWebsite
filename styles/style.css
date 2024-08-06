@@ -2,6 +2,8 @@ body {
     margin-top:30px;
     background-color: #efeb68 ;
     font-family: sans-serif;
+    margin-left: 50px;
+    margin-right:50px;
 }
 marquee {
     behavior: slide;

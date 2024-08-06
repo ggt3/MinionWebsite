@@ -19,7 +19,9 @@
     }
     input[type="submit"] {
       border-color: #8a2be2;
-      color: white;
+      background-color: #C3B1E1;
+      color: black;
+
       padding: 12px 20px;
       border: none;
       border-radius: 4px;
@@ -31,9 +33,10 @@
       border-radius: 4px;
       /* background-color: #f1f1f1; */
     }
-    /* label{
-      padding-top:20px;
-    } */
+    input[type="radio"] {
+      text-align: center;
+      
+    }
   </style>
   <body>
     <h1>Are you cut out to be a minion</h1>
@@ -46,12 +49,7 @@
 
       <label for="favcolor">Select your favorite color:</label>
       <input type="color" id="favcolor" name="favcolor" />
-      <br />
 
-      <label for="userName"
-        >User Name
-        <input type="text" name="userName" id="UserName" required />
-      </label>
       <br />
 
       <label>Choose their favorite fruit:</label>
@@ -63,7 +61,20 @@
         <option value="strawberry">Strawberry</option>
       </select>
 
+      <input type="radio" id="gru" name="master" value="Gru">
+      <label for="gru">Gru</label><br>
+      <input type="radio" id="dru" name="master" value="dru">
+      <label for="dru">Dru</label><br>
+      <input type="radio" id="bru" name="master" value="Bru">
+      <label for="bru">Bru</label><br>
+  
       <br />
+
+      <label>Select all that is Minion-ese:</label>
+      <input type="checkbox" > <label>Gelato!</label>
+      <input type="checkbox" > <label>Papoy?</label>
+      <input type="checkbox" > <label>Bapanada</label>
+      <input type="checkbox" > <label>et pis c’est tout</label>
       <input type="submit" />
     </div>
   </body>
